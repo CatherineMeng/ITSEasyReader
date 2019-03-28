@@ -30,6 +30,7 @@
 
 import UIKit
 import TesseractOCR
+import AVFoundation
 
 class ViewController: UIViewController {
   
@@ -96,6 +97,13 @@ class ViewController: UIViewController {
       tesseract.image = image.g8_blackAndWhite()
       tesseract.recognize()
       textView.text = tesseract.recognizedText
+      print(tesseract.recognizedText)
+      let utterance = AVSpeechUtterance(string: tesseract.recognizedText)
+      utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+      utterance.rate = 0.5
+      
+      let synthesizer = AVSpeechSynthesizer()
+      synthesizer.speak(utterance)
     }
     activityIndicator.stopAnimating()
   }
