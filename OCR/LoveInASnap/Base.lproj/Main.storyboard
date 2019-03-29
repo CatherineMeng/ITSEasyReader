@@ -24,12 +24,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Koy-SZ-c3L">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap/upload a clear picture of your poem then edit below. Tap outside of the text box once your sweet nothings are complete." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="6ma-5u-o2n">
-                                        <rect key="frame" x="26" y="30" width="362" height="60"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap/upload a clear picture of the texts you want to read out. Tap Play to speak and Pause or Stop the speech." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="6ma-5u-o2n">
+                                        <rect key="frame" x="26" y="30" width="362" height="70"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="ZE9-2Z-vve"/>
+                                            <constraint firstAttribute="height" constant="70" id="ZE9-2Z-vve"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -49,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBZ-eo-d7T">
-                                        <rect key="frame" x="328" y="513.66666666666663" width="35" height="35"/>
+                                        <rect key="frame" x="328" y="525.66666666666663" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="Guu-N3-3YH"/>
                                             <constraint firstAttribute="width" secondItem="lBZ-eo-d7T" secondAttribute="height" multiplier="1:1" id="w3Z-rw-tOZ"/>
@@ -62,12 +62,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InM-Rb-jXE">
-                                        <rect key="frame" x="51" y="456" width="312" height="40"/>
-                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
+                                        <rect key="frame" x="51" y="456" width="312" height="52"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Snap/Upload Image">
-                                            <color key="titleColor" red="0.58064489145388021" green="0.74652297537843604" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="0.50486483895705525" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.88453759517766495" green="0.86696830864520613" blue="0.57844024312720588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -83,7 +83,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Find this..." adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="THZ-rt-8Es">
-                                        <rect key="frame" x="51" y="516" width="130.66666666666666" height="30"/>
+                                        <rect key="frame" x="51" y="528" width="130.66666666666666" height="30"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -92,7 +92,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Replace with..." adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="02E-0U-47x">
-                                        <rect key="frame" x="189.66666666666663" y="516" width="130.33333333333337" height="30"/>
+                                        <rect key="frame" x="189.66666666666663" y="528" width="130.33333333333337" height="30"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -101,7 +101,7 @@
                                         </connections>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVg-ev-ijX">
-                                        <rect key="frame" x="51" y="110" width="312" height="326"/>
+                                        <rect key="frame" x="51" y="120" width="312" height="316"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -110,20 +110,24 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50007189419999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     </activityIndicatorView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYZ-CK-uph">
-                                        <rect key="frame" x="50" y="684" width="66" height="42"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYZ-CK-uph">
+                                        <rect key="frame" x="93" y="618" width="46" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Pause"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
-                                            <action selector="pauseButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qdp-Pv-nEx"/>
+                                            <action selector="pauseSpeak:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eMN-ao-R6f"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylV-O4-yoT">
-                                        <rect key="frame" x="181.66666666666666" y="684" width="51" height="42"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylV-O4-yoT">
+                                        <rect key="frame" x="229" y="618" width="51" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Stop"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
-                                            <action selector="stopButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q9M-0D-8PM"/>
+                                            <action selector="stop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VLN-0u-yED"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -176,8 +180,9 @@
                     <connections>
                         <outlet property="activityIndicator" destination="u9K-n1-Q7b" id="T6q-Q6-390"/>
                         <outlet property="findTextField" destination="THZ-rt-8Es" id="BaA-kh-Id3"/>
-                        <outlet property="pauseButton" destination="DYZ-CK-uph" id="7Yu-hv-3eK"/>
+                        <outlet property="pauseButton" destination="DYZ-CK-uph" id="6oT-8S-Dze"/>
                         <outlet property="replaceTextField" destination="02E-0U-47x" id="pX8-PP-9nE"/>
+                        <outlet property="stopButton" destination="ylV-O4-yoT" id="ZVX-kc-jyN"/>
                         <outlet property="textView" destination="LVg-ev-ijX" id="hkC-pT-NGf"/>
                         <outlet property="topMarginConstraint" destination="kt0-vT-bL0" id="40E-5d-aEU"/>
                     </connections>

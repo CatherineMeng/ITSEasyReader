@@ -40,24 +40,48 @@ class ViewController: UIViewController {
   @IBOutlet weak var topMarginConstraint: NSLayoutConstraint!
   @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   @IBOutlet weak var pauseButton: UIButton!
+  @IBOutlet weak var stopButton: UIButton!
   
-  @IBAction func pauseButton(_ sender: UIButton) {
-    if sender.currentTitle! == "Play" {
-      sender.setTitle("Pause", for: UIControlState.normal)
+  var utterance : AVSpeechUtterance?
+  var synthesizer = AVSpeechSynthesizer()
+  
+  // playStatus: 0 -- Stop, 1 -- Play, 2 -- Pause
+  var playStatus = 0
+  
+  @IBAction func pauseSpeak(_ sender: UIButton) {
+    if playStatus == 0 {
+      if utterance != nil {
+        print("Status: Play")
+        playStatus = 1
+        synthesizer.speak(utterance!)
+        sender.setTitle("Pause", for: UIControlState.normal)
+      }
     }
-    else if sender.currentTitle! == "Pause" {
+    else if playStatus == 1 {
+      print("Status: Pause")
+      playStatus = 2
+      synthesizer.pauseSpeaking(at: AVSpeechBoundary.immediate)
       sender.setTitle("Play", for: UIControlState.normal)
+    }
+    else if playStatus == 2 {
+      print("Status: Play")
+      playStatus = 1
+      synthesizer.continueSpeaking()
+      sender.setTitle("Pause", for: UIControlState.normal)
     }
   }
   
-  @IBAction func stopButton(_ sender: UIButton) {
-    if pauseButton.currentTitle! == "Pause" {
-      pauseButton.setTitle("Play", for: UIControlState.normal)
+  @IBAction func stop(_ sender: UIButton) {
+    playStatus = 0
+    pauseButton.setTitle("Play", for: UIControlState.normal)
+    if utterance != nil {
+      synthesizer.stopSpeaking(at: AVSpeechBoundary.immediate)
     }
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.view.backgroundColor = #colorLiteral(red: 0.09224938542, green: 0.1753752584, blue: 0.2697493655, alpha: 1)
   }
 
   // IBAction methods
@@ -114,12 +138,9 @@ class ViewController: UIViewController {
       tesseract.recognize()
       textView.text = tesseract.recognizedText
       print(tesseract.recognizedText)
-      let utterance = AVSpeechUtterance(string: tesseract.recognizedText)
-      utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
-      utterance.rate = 0.5
-      
-      let synthesizer = AVSpeechSynthesizer()
-      synthesizer.speak(utterance)
+      utterance = AVSpeechUtterance(string: tesseract.recognizedText)
+      utterance!.voice = AVSpeechSynthesisVoice(language: "en-GB")
+      utterance!.rate = 0.5
     }
     activityIndicator.stopAnimating()
   }
