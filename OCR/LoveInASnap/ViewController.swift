@@ -39,6 +39,22 @@ class ViewController: UIViewController {
   @IBOutlet weak var replaceTextField: UITextField!
   @IBOutlet weak var topMarginConstraint: NSLayoutConstraint!
   @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+  @IBOutlet weak var pauseButton: UIButton!
+  
+  @IBAction func pauseButton(_ sender: UIButton) {
+    if sender.currentTitle! == "Play" {
+      sender.setTitle("Pause", for: UIControlState.normal)
+    }
+    else if sender.currentTitle! == "Pause" {
+      sender.setTitle("Play", for: UIControlState.normal)
+    }
+  }
+  
+  @IBAction func stopButton(_ sender: UIButton) {
+    if pauseButton.currentTitle! == "Pause" {
+      pauseButton.setTitle("Play", for: UIControlState.normal)
+    }
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()

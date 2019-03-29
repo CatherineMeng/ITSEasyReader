@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="BradleyHand-Bold.ttf">
-            <string>BradleyHandITCTT-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -24,14 +18,14 @@
                         <viewControllerLayoutGuide type="bottom" id="03X-da-6SF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Pm6-fr-Yvv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Koy-SZ-c3L">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap/upload a clear picture of your poem then edit below. Tap outside of the text box once your sweet nothings are complete." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="6ma-5u-o2n">
-                                        <rect key="frame" x="26" y="30" width="323" height="60"/>
+                                        <rect key="frame" x="26" y="30" width="362" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ZE9-2Z-vve"/>
                                         </constraints>
@@ -40,7 +34,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D30-HR-s1J">
-                                        <rect key="frame" x="307" y="607" width="60" height="60"/>
+                                        <rect key="frame" x="346" y="676" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="Hlu-gY-GHc"/>
                                             <constraint firstAttribute="height" constant="60" id="ICa-N8-17i"/>
@@ -55,7 +49,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBZ-eo-d7T">
-                                        <rect key="frame" x="288" y="444.5" width="35" height="35"/>
+                                        <rect key="frame" x="328" y="513.66666666666663" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="Guu-N3-3YH"/>
                                             <constraint firstAttribute="width" secondItem="lBZ-eo-d7T" secondAttribute="height" multiplier="1:1" id="w3Z-rw-tOZ"/>
@@ -68,7 +62,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InM-Rb-jXE">
-                                        <rect key="frame" x="51" y="386.5" width="272" height="40"/>
+                                        <rect key="frame" x="51" y="456" width="312" height="40"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="22"/>
                                         <size key="titleShadowOffset" width="1" height="1"/>
                                         <state key="normal" title="Snap/Upload Image">
@@ -89,7 +83,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Find this..." adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="THZ-rt-8Es">
-                                        <rect key="frame" x="51" y="446.5" width="111" height="30"/>
+                                        <rect key="frame" x="51" y="516" width="130.66666666666666" height="30"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -98,7 +92,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Replace with..." adjustsFontSizeToFit="NO" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="02E-0U-47x">
-                                        <rect key="frame" x="170" y="446.5" width="110.5" height="30"/>
+                                        <rect key="frame" x="189.66666666666663" y="516" width="130.33333333333337" height="30"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -107,20 +101,38 @@
                                         </connections>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVg-ev-ijX">
-                                        <rect key="frame" x="51" y="110" width="272" height="257"/>
+                                        <rect key="frame" x="51" y="110" width="312" height="326"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="u9K-n1-Q7b">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50007189419999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     </activityIndicatorView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYZ-CK-uph">
+                                        <rect key="frame" x="50" y="684" width="66" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Pause"/>
+                                        <connections>
+                                            <action selector="pauseButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Qdp-Pv-nEx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylV-O4-yoT">
+                                        <rect key="frame" x="181.66666666666666" y="684" width="51" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q9M-0D-8PM"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="InM-Rb-jXE" firstAttribute="centerX" secondItem="Koy-SZ-c3L" secondAttribute="centerX" id="0S9-tG-U24"/>
+                                    <constraint firstAttribute="bottom" secondItem="DYZ-CK-uph" secondAttribute="bottom" constant="10" id="3nj-JL-Fbo"/>
                                     <constraint firstAttribute="bottom" secondItem="LVg-ev-ijX" secondAttribute="bottom" constant="300" id="42G-nA-8hV"/>
+                                    <constraint firstItem="ylV-O4-yoT" firstAttribute="centerX" secondItem="Koy-SZ-c3L" secondAttribute="centerX" id="70J-xP-thq"/>
                                     <constraint firstItem="6ma-5u-o2n" firstAttribute="leading" secondItem="Koy-SZ-c3L" secondAttribute="leadingMargin" constant="18" id="7bz-HQ-b4s"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="D30-HR-s1J" secondAttribute="trailing" id="7mF-wK-r7e"/>
                                     <constraint firstItem="u9K-n1-Q7b" firstAttribute="leading" secondItem="Koy-SZ-c3L" secondAttribute="leading" id="8RY-aR-4YX"/>
@@ -129,6 +141,8 @@
                                     <constraint firstItem="THZ-rt-8Es" firstAttribute="top" secondItem="InM-Rb-jXE" secondAttribute="bottom" constant="20" id="JJw-jr-iGO"/>
                                     <constraint firstItem="THZ-rt-8Es" firstAttribute="centerY" secondItem="02E-0U-47x" secondAttribute="centerY" id="KE1-8v-iiq"/>
                                     <constraint firstItem="u9K-n1-Q7b" firstAttribute="top" secondItem="Koy-SZ-c3L" secondAttribute="top" id="OIa-m7-Z8l"/>
+                                    <constraint firstItem="ylV-O4-yoT" firstAttribute="top" secondItem="DYZ-CK-uph" secondAttribute="top" id="On1-bi-9Dn"/>
+                                    <constraint firstItem="DYZ-CK-uph" firstAttribute="leading" secondItem="Koy-SZ-c3L" secondAttribute="leading" constant="50" id="PIy-1H-rwz"/>
                                     <constraint firstItem="InM-Rb-jXE" firstAttribute="trailing" secondItem="lBZ-eo-d7T" secondAttribute="trailing" id="SJG-So-K8v"/>
                                     <constraint firstItem="lBZ-eo-d7T" firstAttribute="centerY" secondItem="02E-0U-47x" secondAttribute="centerY" id="VJu-xR-XWT"/>
                                     <constraint firstItem="6ma-5u-o2n" firstAttribute="top" secondItem="Koy-SZ-c3L" secondAttribute="top" constant="30" id="Zxe-EI-NOd"/>
@@ -143,6 +157,7 @@
                                     <constraint firstAttribute="bottom" secondItem="D30-HR-s1J" secondAttribute="bottom" id="sT2-GN-LED"/>
                                     <constraint firstItem="THZ-rt-8Es" firstAttribute="width" secondItem="02E-0U-47x" secondAttribute="width" id="sbZ-kY-Wye"/>
                                     <constraint firstAttribute="bottom" secondItem="u9K-n1-Q7b" secondAttribute="bottom" id="w2z-Jz-1un"/>
+                                    <constraint firstAttribute="bottom" secondItem="ylV-O4-yoT" secondAttribute="bottom" constant="10" id="zRF-dP-Mwt"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -161,6 +176,7 @@
                     <connections>
                         <outlet property="activityIndicator" destination="u9K-n1-Q7b" id="T6q-Q6-390"/>
                         <outlet property="findTextField" destination="THZ-rt-8Es" id="BaA-kh-Id3"/>
+                        <outlet property="pauseButton" destination="DYZ-CK-uph" id="7Yu-hv-3eK"/>
                         <outlet property="replaceTextField" destination="02E-0U-47x" id="pX8-PP-9nE"/>
                         <outlet property="textView" destination="LVg-ev-ijX" id="hkC-pT-NGf"/>
                         <outlet property="topMarginConstraint" destination="kt0-vT-bL0" id="40E-5d-aEU"/>
@@ -173,11 +189,11 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="111.5" y="280.5"/>
+            <point key="canvasLocation" x="161.59420289855075" y="187.83482142857142"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Envelope.png" width="432" height="373"/>
+        <image name="Envelope.png" width="341.80218505859375" height="295.12088012695312"/>
         <image name="Swap.png" width="800" height="800"/>
     </resources>
 </document>
