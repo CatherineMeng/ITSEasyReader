@@ -19,6 +19,7 @@
 		0463BB741F5FBC5500B9946E /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0463BB751F5FBC5500B9946E /* TesseractOCR.framework */; };
 		0463BB761F5FBFFA00B9946E /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 041EB83E1F5EBB13005365C9 /* tessdata */; };
 		04C5EA191F5E9F1C00B61340 /* Envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C5EA181F5E9ECE00B61340 /* Envelope.png */; };
+		3A51183822600CD500DDADFD /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0463BB731F5FB6D400B9946E /* TesseractOCR.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		3AEBA8242253159E00B0113B /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AEBA8232253159E00B0113B /* Icon-1024.png */; };
 		9864112442E866649CE6DEE7 /* Pods_LoveInASnap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3624C9A37248BD19DEEA7C0 /* Pods_LoveInASnap.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A51183822600CD500DDADFD /* TesseractOCR.framework in Frameworks */,
 				0463BB741F5FBC5500B9946E /* TesseractOCR.framework in Frameworks */,
 				041EB8431F5EBC03005365C9 /* libstdc++.tbd in Frameworks */,
 				041EB8421F5EBB81005365C9 /* CoreImage.framework in Frameworks */,
@@ -298,7 +300,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -352,7 +354,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

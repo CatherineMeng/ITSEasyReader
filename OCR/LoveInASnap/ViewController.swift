@@ -41,7 +41,19 @@ class ViewController: UIViewController {
   @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   @IBOutlet weak var pauseButton: UIButton!
   @IBOutlet weak var stopButton: UIButton!
+  @IBAction func fasterButton(_ sender: UIButton) {
+    if utterance!.rate<10{
+      utterance!.rate+=0.1
+    }
+  }
   
+    @IBAction func slowerButton(_ sender: UIButton) {
+      if utterance!.rate>0.1{
+        utterance!.rate-=0.1
+        print (utterance!.rate)
+      }
+    }
+    
   var utterance : AVSpeechUtterance?
   var synthesizer = AVSpeechSynthesizer()
   
@@ -140,7 +152,7 @@ class ViewController: UIViewController {
       print(tesseract.recognizedText)
       utterance = AVSpeechUtterance(string: tesseract.recognizedText)
       utterance!.voice = AVSpeechSynthesisVoice(language: "en-GB")
-      utterance!.rate = 0.5
+      
     }
     activityIndicator.stopAnimating()
   }

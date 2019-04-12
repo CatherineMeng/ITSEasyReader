@@ -111,7 +111,7 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.50007189419999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     </activityIndicatorView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYZ-CK-uph">
-                                        <rect key="frame" x="93" y="618" width="46" height="42"/>
+                                        <rect key="frame" x="87" y="585" width="46" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Play">
                                             <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -121,13 +121,35 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylV-O4-yoT">
-                                        <rect key="frame" x="229" y="618" width="51" height="42"/>
+                                        <rect key="frame" x="222" y="585" width="51" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Stop">
                                             <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="stop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VLN-0u-yED"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiR-mn-LHl">
+                                        <rect key="frame" x="77" y="556" width="67" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Faster">
+                                            <color key="titleColor" red="0.96330834949999999" green="0.97916668650000005" blue="0.72455343819999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fasterButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="quA-NY-IRz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4F-8o-FCf">
+                                        <rect key="frame" x="212" y="556" width="71" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Slower">
+                                            <color key="titleColor" red="0.96330834949999999" green="0.97916668650000005" blue="0.72455343819999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="slowerButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9wN-kg-OGJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -194,7 +216,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="161.59420289855075" y="187.83482142857142"/>
+            <point key="canvasLocation" x="160.86956521739131" y="187.50000000000003"/>
         </scene>
     </scenes>
     <resources>
